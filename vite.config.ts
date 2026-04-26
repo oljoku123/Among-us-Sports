@@ -4,6 +4,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+   import { defineConfig } from 'vite'
+
+export default defineConfig({
+  base: '/Among-Us-Sports/'
+}) 
     return {
       server: {
         port: 3000,
